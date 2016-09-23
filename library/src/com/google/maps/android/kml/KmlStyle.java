@@ -14,7 +14,7 @@ import java.util.Random;
 /**
  * Represents the defined styles in the KML document
  */
-/* package */ class KmlStyle {
+/* package */ public class KmlStyle {
 
     private final static int HSV_VALUES = 3;
 
@@ -127,7 +127,7 @@ import java.util.Random;
      *
      * @return scale value
      */
-    /* package */ double getIconScale() {
+    /* package */ public double getIconScale() {
         return mScale;
     }
 
@@ -174,7 +174,7 @@ import java.util.Random;
      *
      * @return Url for the marker icon, null otherwise
      */
-    /* package */ String getIconUrl() {
+    /* package */ public String getIconUrl() {
         return mIconUrl;
     }
 
