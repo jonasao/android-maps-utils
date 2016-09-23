@@ -50,6 +50,8 @@ import java.util.Random;
 
     private float mMarkerColor;
 
+    private float mHeading;
+
     /**
      * Creates a new Style object
      */
@@ -251,8 +253,17 @@ import java.util.Random;
      * @param heading Decimal representation of a rotation value
      */
     /* package */ void setHeading(float heading) {
+        mHeading = heading;
         mMarkerOptions.rotation(heading);
         mStylesSet.add("heading");
+    }
+
+    /**
+     * Gets rotation / heading for a marker
+     * @return
+     */
+    /* package */ public float getHeading() {
+        return mHeading;
     }
 
     /**
